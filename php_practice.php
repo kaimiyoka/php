@@ -27,11 +27,9 @@ H1{
     <title>Document</title>
 </head>
 <body>
-    <h1>THis is my first PHP page</h1>
-
     <?php 
     
-    /*echo "<b>Hello my name is Don!</b><br>"; 
+    /*echo "<b>Hello my name is bie!</b><br>"; 
 
     aZ09
     $a = 5;
@@ -69,7 +67,7 @@ H1{
     echo "$a Eggs"
  */
 
-    $a = "don";
+    $a = "beh bie";
     $b = -5;
     $c = 3.14;
     $d = false;
@@ -78,23 +76,132 @@ H1{
     $g = null;
     $h = fopen("php_practice.php", "r");
 
-    var_dump($a);
-    echo '<br>';
-    var_dump($b);
-    echo '<br>';
-    var_dump($c);
-    echo '<br>';
-    var_dump($d);
-    echo '<br>';
-    var_dump($e);
-    echo '<br>';
-    var_dump($f);
-    echo '<br>';
-    var_dump($g);
-    echo '<br>';
-    var_dump($h);
-    echo '<br>';
+    //var_dump($a);
+   // echo '<br>';
+  //  var_dump($b);
+   // echo '<br>';
+  //  var_dump($c);
+   // echo '<br>';
+   // var_dump($d);
+   // echo '<br>';
+   // var_dump($e);
+  //  echo '<br>';
+  //  var_dump($f);
+   // echo '<br>';
+  //  var_dump($g);
+  //  echo '<br>';
+   // var_dump($h);
+   // echo '<br>';
    
+    //echo strlen($a), "<br>";
+   // echo str_word_count($a), "<br>";
+    //echo strpos($a, "bie"), "<br>";
+   // echo strtoupper($a),"<br>";
+  //  echo strtolower($a),"<br>";
+  //  echo str_replace("bie","bah", $a), "<br>";
+   // echo strrev($a), "<br>";
+   // echo trim("Hello Love!  "), "<br>";
+   // var_dump(explode("o", "Hello Love! "));
+
+    //echo var_dump( "Hello" . "World!");
+   /* $x ="Hello";
+    $y = "World";
+
+    echo "$x $y", "<br>";
+
+    echo "John \$Bay\"Cruz";*/
+
+    /*$a = 5 ;
+    $b = 3.14;
+    $c = "5";
+
+    echo PHP_INT_MAX, "<br>";
+    echo PHP_INT_MIN, "<br>";
+    echo PHP_INT_SIZE,"<br>";
+
+    echo is_int($a), "<br>";
+    echo is_int($b), "<br>";
+
+    echo PHP_FLOAT_MAX,"<br>";
+    echo PHP_FLOAT_MIN,"<br>";
+    echo PHP_FLOAT_DIG,"<br>";
+    echo PHP_FLOAT_EPSILON,"<br>";
+    
+    echo is_float($a), "<br>";
+    echo is_float($b), "<br>";
+    echo is_float($c), "<br>";
+
+    echo is_numeric($a), "<br>";
+    echo is_numeric($b), "<br>";
+    echo is_numeric($c), "<br>";*/
+
+   
+   /* $a = (string) "beh bie";
+    $b = (string) -5;
+    $c = (string) 3.14;
+    $d = (string) true;
+    $e = (string) null;
+    $f = (string) fopen("php_practice.php", "r");*/
+
+   /* $a = (int) "beh bie";
+    $b = (int) -5;
+    $c = (int) 3.14;
+    $d = (int) false;
+    $e = (int) null;
+    $f = (int) fopen("php_practice.php", "r");*/
+
+   /* $a = (float) "beh bie";
+    $b = (float) -5;
+    $c = (float) 3.14;
+    $d = (float) false;
+    $e = (float) null;
+    $f = (float) fopen("php_practice.php", "r");*/
+
+    /*$a = (bool) "beh bie";
+    $b = (bool) -5;
+    $c = (bool) 3.14;
+    $d = (bool) false;
+    $e = (bool) null;
+    $f = (bool) fopen("php_practice.php", "r");*/
+
+   /* $a = (array) "beh bie";
+    $b = (array) -5;
+    $c = (array) 3.14;
+    $d = (array) false;
+    $e = (array) null;
+    $f = (array) fopen("php_practice.php", "r");*/
+
+   /* $a = "beh bie";
+    $b = -5;
+    $c = 3.14;
+    $d = false;
+    $e = null;
+    $f = fopen("php_practice.php", "r");*/
+
+   // unset($a);
+
+   // var_dump($a);
+  // echo '<br>';
+   // var_dump($b);
+   // echo '<br>';
+   // var_dump($c);
+   // echo '<br>';
+   // var_dump($d);
+   // echo '<br>';
+   // var_dump($e);
+   // echo '<br>';
+   // var_dump($f);
+
+    //echo pi();
+
+    //echo min(5,1,3,2);
+    //echo max(5,1,3,2);
+
+    //echo abs(10);
+
+    //echo sqrt(16);
+   // echo round(3.45, 0);
+   echo rand(5,10);
     ?>
 
 </body>
