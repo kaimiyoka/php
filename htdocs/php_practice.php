@@ -91,35 +91,51 @@
         //$x = echo("Hello");
         //echo $x,"";
 
-        /*$a = "Michael Jorkson";
-        $b = "5";
-        $c = "4.1";
-        $d = true;
-        $e = [1,2,3];
-        $f = new stdClass();
-        $g = null;
-        $h = fopen("php_practice.php", "r");
+        // $a = (object) "Michael Jorkson";
+        // $b = (object) "5";
+        // $c = (object) "4.1";
+        // $d = (object) true;
+        // $e = (object) [1,2,3];
+        // $f = (object) new stdClass();
+        // $g = (object) null;
+        // $h = (object) fopen("php_practice.php", "r");
 
-        var_dump($a);
-        echo "";
-        var_dump($b);
-        echo "";
-        var_dump($c);
-        echo "";
-        var_dump($d);
-        echo "";
-        var_dump($e);
-        echo "";
-        var_dump($f);
-        echo "";
-        var_dump($g);
-        echo "";
-        var_dump($h);
-        echo "";
+        // unset($a);//remove variable
+
+        // var_dump($a);
+        // echo "<br>";
+        // var_dump($b);
+        // echo "<br>";
+        // var_dump($c);
+        // echo "<br>";
+        // var_dump($d);
+        // echo "<br>";
+        // var_dump($e);
+        // echo "<br>";
+        // var_dump($f);
+        // echo "<br>";
+        // var_dump($g);
+        // echo "<br>";
+        // var_dump($h);
+        // echo "<br>";
+
+        // $a = pi();
+        // echo $b;
+
+        // echo abs(6);
+
+        // echo sqrt(3);
+
+        // echo round(5.4);
+
+        // echo rand(5, 20);
+
+        //constants
+
 
         // echo strlen($a);
         
-        $x= "Edwin Cruz";
+        /*$x= "Edwin Cruz";
         echo str_replace("Cruz","Edwin", $x);
         
         echo trim("Hello        World!    ");
@@ -232,17 +248,193 @@
         //echo $y,"<br>";
 
         
+        //pre increment/decrement
+
+        // $x = 5;
+        // echo $x++;
+
+        // //post increment/decrement
+
+        // $y = 5;
+        // echo ++$y;
+
+        //Logical
+
+        // var_dump(true && true); //true
+        // var_dump(5==="5"  && 5===5); // both true
+
+        // union
+        // $x = [1, 2, 3];
+        // $y = [3=>4,5,6,7];
+
+        // $z = $x + $y;
+
+        // print_r($x);
+        // print_r($y);
+        // print_r($z);
+
+        //equal to
+        // $x = [1, 2, 3];
+        // $y = [2=>3, 1=>2, 0=>1];
+        // echo($x == $y);
+
+        // identical to
+        // $x = [1, 2, 3];
+        // $y = [2=>3, 1=>2, 0=>1];
+        // echo($x === $y); //false
+
+        // decision making statements
+        
+        // if (4 == '4h'){
+        //     echo "same";
+        // }elseif(6>5){
+        //     echo "6 is greater than 5";
+        // }else{
+        //     echo "no";
+        // }
+        
+        // $gender = "male";
+        // if($gender = "female"){echo "woman";}else{echo "mens";}
+        // //confitional ? if true : if false
+        // echo $gender = 'female' ? "woman" : "mens";
+        // $x = $gender = 'female' ? "woman" : "mens";
+        // echo $x;
+        // $x = $gender ?? 'male';
+        // echo $x;
+
+        // $color = "B";
+
+        // switch($color){
+        //     case "R":
+        //         echo "Red";
+        //         break;
+        //     case "B":
+        //         echo "Blue";
+        //         break;
+        //     case "G":
+        //         echo "Green";
+        //         break;
+        //     default:
+        //         echo "No Color";
+        // }
+
+            //true and true
+        // if (4 == "4" && 4 == 4){
+        //     echo "True";
+        // }
+        // atleast 1 true
+        // if (4 == "4" || 4 == 4){
+        //     echo "True";
+        // }
+        //only 1 true cannot be both
+        // if (4 == "4" XOR 4 == 4){
+        //     echo "True";
+        // }
+        //reverse
+        // echo !4=="4";
+
+        //php Looping statements
+
+        //while
+        //     $x = 0;
+        // while ($x < 5){
+        //     echo "Hello World<br>";
+        //     $x++;
+        //     continue;
+        // }
+
+        //do while
+        // do{
+        //     echo $x; 
+        //       $x++;
+        // }while ($x < 5)
+        //
+
+        //for
+        // for($x = 0; $x < 10; $x++){
+        //     echo $x;
+        // }
+
+        //foreach
+
+        // $x = aaray(1,2,3,4);
+
+        // foreach($x as $key => value){
+        //     echo $key."->".$value,"<br>";
+        // }
+
+        //$gender = 'male';
+        //$x = $gender == "male" ? "MR.":"MS.";
+        //$x = $gender == "male" ? "MR.":"MS.";
+        
+        //echo $x;
+
+        //$color = "R" ?? "RED";
+
+        //echo $color;
+
+        //$color = null ?? "RED";
+
+        //echo $color;
+
+        /*$students = array(
+        array("name"=> "Mary", "gender" => "Female"),
+        array("name"=> "Ray", "gender" => "Male"),
+        array("name"=> "Hardy", "gender" => "Male"),
+    );
+
+        foreach ($students as $student){
+        echo "Name: "$student["name"] . "<br>";
+        echo "Gender: "$student["gender"] . "<br>";
+    }*/
+
+    $students = array(
+        array("name"=> "Mary", "age" => "16"),
+        array("name"=> "Ray", "age" => "17"),
+        array("name"=> "Hardy", "age" => "20"),
+    );
+
+        foreach ($students as $student){
+        echo "<h1>Name: ".$student["name"] . "<h1>";
+        echo "<ul>";
+            echo "<li>". $student["gender"] ."</li>";
+            echo "<li>". $student["age"] ."</li>";
+        echo "</ul>";
+    }
+
+
+
+
+
+
+
+
 
 
 
         
-
-        
-    
 
 
 
 
     ?>
+
+   <ol>
+        <!-- <?php for($x = 1; $x <= 10; $x++){ ?>
+           <li> item <?php echo $x; ?></li>
+        <?php } ?> -->
+
+
+       
+        <?php
+         $x = array ("mike", "john", "jane", "mary");
+        foreach($x as $value){ ?>
+            <li> <?php echo $value; ?> </li>
+        <?php } ?>
+    </ol>
+
+
+
+    
 </body>
 </html>
